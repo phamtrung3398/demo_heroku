@@ -8,14 +8,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <packaging>jar</packaging>
     <artifactId>main</artifactId>
 
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <start-class>spring.hero.MainApplication</start-class>
+        <spring.boot.mainclass>spring.hero.MainApplication</spring.boot.mainclass>
     </properties>
         <dependencies>
 
@@ -51,13 +51,21 @@
             </dependency>
         </dependencies>
     <build>
+        <sourceDirectory>src</sourceDirectory>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                     <configuration>
-                        <skip>true</skip>
+                        <mainClass>${spring.boot.mainclass}</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
