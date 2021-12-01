@@ -15,7 +15,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spring.boot.mainclass>spring.hero.MainApplication</spring.boot.mainclass>
+        <spring.boot.mainclass>main.spring.hero.MainApplication</spring.boot.mainclass>
     </properties>
         <dependencies>
 
