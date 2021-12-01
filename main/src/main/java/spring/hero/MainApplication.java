@@ -1,4 +1,4 @@
-package main.java.spring.hero;
+package spring.hero;
 
 
 import org.springframework.boot.SpringApplication;
