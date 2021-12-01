@@ -1,4 +1,4 @@
-package spring.hero.controller;
+package main.java.spring.hero.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
