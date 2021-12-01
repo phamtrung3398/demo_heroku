@@ -22,10 +22,10 @@ public class MainApplication {
 
     }
     @GetMapping
-    public Doctor index()
+    public String index()
     {
-        Doctor doctor = new Doctor(1,"hello");
-        return doctor;
+//        Doctor doctor = new Doctor(1,"hello");
+        return "doctor";
     }
 }
 
